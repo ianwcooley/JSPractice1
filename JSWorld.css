@@ -1,0 +1,197 @@
+@import url("http://fonts.googleapis.com/css?family=Bevan");
+@import url('http://fonts.googleapis.com/css?family=Lato');
+/* Fonts */
+@font-face {
+  font-family: 'Adamas';
+  src: url('fonts/Adamas-Regular.otf') format('opentype');
+}
+body {
+  background: url("images/assault.png");
+  cursor: default;
+}
+body #row0 {
+  border-bottom: 2px solid #0d0d0d;
+  padding-bottom: 15px;
+}
+body #row0 #mainHeader {
+  text-align: center;
+  color: #d9d9d9;
+}
+body #row0 #mainHeader #mainTitle {
+  margin-top: 15px;
+  padding: 10px 0px;
+  font-family: 'Bevan', cursive;
+  vertical-align: middle;
+  text-shadow: 10px 10px 12px rgba(0, 0, 0, 0.8);
+}
+body .outerBox {
+  margin-top: 15px;
+}
+body .header {
+  text-align: center;
+  color: #c2c2c2;
+}
+body #row1 {
+  border-top: 2px solid #1f1f1f;
+}
+body #row1 #wrap1 {
+  height: 300px;
+  margin-top: 150px;
+  position: relative;
+  perspective: 1000px;
+  perspective-origin: 50% 100px;
+}
+body #row1 .cube {
+  position: relative;
+  margin: 0 auto;
+  width: 200px;
+  transform-style: preserve-3d;
+  transition: all 0.3s linear;
+  transform: rotateX(-30deg) rotateY(0deg);
+}
+body #row1 .cube div.face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: url("images/dark_wood.png");
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.85);
+  color: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s linear;
+}
+body #row1 .cube div.back {
+  transform: translateZ(-100px) rotateY(180deg);
+  color: rgba(255, 247, 0, 0.5);
+}
+body #row1 .cube div.right {
+  transform: translateX(100px) rotateY(-270deg);
+  color: rgba(0, 136, 255, 0.5);
+}
+body #row1 .cube div.left {
+  transform: translateX(-100px) rotateY(270deg);
+  color: rgba(255, 0, 34, 0.5);
+}
+body #row1 .cube div.top {
+  transform: translateY(-100px) rotateX(90deg);
+}
+body #row1 .cube div.bottom {
+  transform: translateY(100px) rotateX(-90deg);
+}
+body #row1 .cube div.front {
+  transform: translateZ(100px);
+  color: rgba(89, 255, 0, 0.5);
+}
+body #row1 .cube #monster1 {
+  position: absolute;
+  transition: all 0.3s linear;
+  width: 171px;
+  height: 123px;
+  background: url("images/lilMonster1.png");
+  background-position: center;
+  transform: translateX(15px) rotateX(0deg);
+  visibility: hidden;
+}
+body #row1 .cube #monster2 {
+  position: absolute;
+  transition: all 0.3s linear;
+  width: 86px;
+  height: 93px;
+  background: url("images/lilMonster2.png");
+  background-position: center;
+  transform: translateX(57px) rotateX(0deg);
+  visibility: hidden;
+}
+body #row1 .cube #monster3 {
+  position: absolute;
+  transition: all 0.3s linear;
+  width: 147px;
+  height: 188px;
+  background: url("images/lilMonster3.png");
+  background-position: center;
+  transform: translateX(27px) rotateX(0deg);
+  visibility: hidden;
+}
+body #row1 .cube #monster4 {
+  position: absolute;
+  transition: all 0.3s linear;
+  width: 134px;
+  height: 174px;
+  background: url("images/lilMonster4.png");
+  background-position: center;
+  transform: translateX(33px) rotateX(0deg);
+  visibility: hidden;
+}
+body #row1 .cube #monster5 {
+  position: absolute;
+  transition: all 0.3s linear;
+  width: 131px;
+  height: 151px;
+  background: url("images/lilMonster5.png");
+  background-position: center;
+  transform: translateX(35px) rotateX(0deg);
+  visibility: hidden;
+}
+body #row1 .cube #monster6 {
+  position: absolute;
+  transition: all 0.3s linear;
+  width: 97px;
+  height: 149px;
+  background: url("images/lilMonster6.png");
+  background-position: center;
+  transform: translateX(51px) rotateX(0deg);
+  visibility: hidden;
+}
+body #row1 .cube:hover .top {
+  transform: translateY(-200px) translateZ(-100px) rotateX(180deg);
+  transform-origin: center;
+}
+body #row1 .cube:hover #monster1 {
+  transform: translateY(-50px) translateX(15px) rotateX(0deg);
+}
+body #row1 .cube:hover #monster2 {
+  transform: translateY(-35px) translateX(57px) rotateX(0deg);
+}
+body #row1 .cube:hover #monster3 {
+  transform: translateY(-70px) translateX(27px) rotateX(0deg);
+}
+body #row1 .cube:hover #monster4 {
+  transform: translateY(-80px) translateX(33px) rotateX(0deg);
+}
+body #row1 .cube:hover #monster5 {
+  transform: translateY(-70px) translateX(35px) rotateX(0deg);
+}
+body #row1 .cube:hover #monster6 {
+  transform: translateY(-80px) translateX(51px) rotateX(0deg);
+}
+body #row1 #box2 {
+  font-family: 'Adamas', cursive;
+  font-size: 750%;
+  text-align: center;
+  letter-spacing: 5px;
+}
+body #row1 #box2 #wrap2 {
+  margin-top: 180px;
+  margin-bottom: 180px;
+}
+body #row1 #box2 #wrap2 #phrase {
+  color: #ff3333;
+  text-shadow: 1px 0px 30px #ff3333;
+}
+body #row2 #box3 #wrap3 {
+  height: 300px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: relative;
+}
+body #row2 #box3 #wrap3 #primesTable {
+  margin: 50px auto;
+}
+body #row2 #box3 #wrap3 #primesTable .number {
+  text-align: center;
+  padding: 3px;
+  font-family: 'Lato', sans-serif;
+  font-size: 150%;
+}
+body #row2 #box3 #wrap3 #primesTable .prime:hover {
+  color: #00ef25;
+  text-shadow: 1px 0px 20px #00ef25;
+}

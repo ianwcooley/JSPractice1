@@ -1,0 +1,211 @@
+/* Fonts */
+@import url("http://fonts.googleapis.com/css?family=Bevan");
+@import url('http://fonts.googleapis.com/css?family=Lato');
+@font-face {
+	font-family: 'Adamas';
+	src: url('fonts/Adamas-Regular.otf') format('opentype');
+}
+
+@background: url("images/assault.png");
+
+body {
+	background: @background;
+	cursor: default;
+	#row0 {
+		border-bottom: 2px solid hsl(0, 0%, 5%);
+		padding-bottom: 15px;
+		
+		#mainHeader {
+			text-align: center;
+			color: hsl(0, 0%, 85%);
+			#mainTitle {
+				margin-top: 15px;
+				padding: 10px 0px;
+				font-family: 'Bevan', cursive;
+				vertical-align: middle;
+				text-shadow: 10px 10px 12px hsla(0,0%,0%,0.8);
+			}
+		}
+	}
+	.outerBox {
+		margin-top: 15px;
+	}
+	.header {
+		text-align: center;
+		color: hsl(0, 0%, 76%);
+	}
+	#row1 {
+		border-top: 2px solid hsl(0, 0%, 12%);
+		#wrap1 {
+            height: 300px;
+            margin-top: 150px;
+            position: relative;
+            perspective: 1000px;
+            perspective-origin: 50% 100px;
+        }
+        .cube  {
+            position: relative;
+            margin: 0 auto;
+            width: 200px;
+            transform-style: preserve-3d;
+            transition: all 0.3s linear;
+            transform: rotateX(-30deg) rotateY(0deg);
+            div.face { 
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                background: url("images/dark_wood.png");
+                box-shadow:inset 0 0 30px rgba(0,0,0,0.85);
+                color:rgba(0,0,0,0.5);
+                transition: all 0.3s linear;
+            }
+            div.back {
+                transform: translateZ(-100px) rotateY(180deg);
+                color:hsla(58, 100%, 50%, 0.5);
+            }
+            div.right {
+                transform: translateX(100px) rotateY(-270deg);
+                color:hsla(208, 100%, 50%, 0.5);
+            }
+            div.left {
+                transform: translateX(-100px) rotateY(270deg);
+                color:hsla(352, 100%, 50%, 0.5);
+            }
+            div.top {
+                transform: translateY(-100px) rotateX(90deg);
+            }
+            div.bottom {
+                transform: translateY(100px) rotateX(-90deg);
+            }
+            div.front {
+                transform: translateZ(100px);
+                color:hsla(99, 100%, 50%, 0.5);
+            }
+            #monster1 {
+                position: absolute;
+                transition: all 0.3s linear;
+                width: 171px;
+                height: 123px;
+                background: url("images/lilMonster1.png");
+                background-position: center;
+                transform: translateX(15px) rotateX(0deg);
+				visibility: hidden;
+            }
+			#monster2 {
+                position: absolute;
+                transition: all 0.3s linear;
+                width: 86px;
+                height: 93px;
+                background: url("images/lilMonster2.png");
+                background-position: center;
+                transform: translateX(57px) rotateX(0deg);
+				visibility: hidden;
+            }
+			#monster3 {
+                position: absolute;
+                transition: all 0.3s linear;
+                width: 147px;
+                height: 188px;
+                background: url("images/lilMonster3.png");
+                background-position: center;
+                transform: translateX(27px) rotateX(0deg);
+				visibility: hidden;
+            }
+			#monster4 {
+                position: absolute;
+                transition: all 0.3s linear;
+                width: 134px;
+                height: 174px;
+                background: url("images/lilMonster4.png");
+                background-position: center;
+                transform: translateX(33px) rotateX(0deg);
+				visibility: hidden;
+            }
+			#monster5 {
+                position: absolute;
+                transition: all 0.3s linear;
+                width: 131px;
+                height: 151px;
+                background: url("images/lilMonster5.png");
+                background-position: center;
+                transform: translateX(35px) rotateX(0deg);
+				visibility: hidden;
+            }
+			#monster6 {
+                position: absolute;
+                transition: all 0.3s linear;
+                width: 97px;
+                height: 149px;
+                background: url("images/lilMonster6.png");
+                background-position: center;
+                transform: translateX(51px) rotateX(0deg);
+				visibility: hidden;
+            }
+        }
+        .cube:hover {
+            .top {
+            transform: translateY(-200px) translateZ(-100px) rotateX(180deg);
+            transform-origin: center;
+            }
+		
+            #monster1 {
+                transform: translateY(-50px) translateX(15px) rotateX(0deg);
+            }
+			#monster2 {
+                transform: translateY(-35px) translateX(57px) rotateX(0deg);
+            }
+			#monster3 {
+                transform: translateY(-70px) translateX(27px) rotateX(0deg);
+            }
+			#monster4 {
+                transform: translateY(-80px) translateX(33px) rotateX(0deg);
+            }
+			#monster5 {
+                transform: translateY(-70px) translateX(35px) rotateX(0deg);
+            }
+			#monster6 {
+                transform: translateY(-80px) translateX(51px) rotateX(0deg);
+            }
+        }
+		#box2 {
+			font-family: 'Adamas', cursive;
+			font-size: 750%;
+			text-align: center;
+			letter-spacing: 5px;
+			#wrap2 {
+				margin-top: 180px;
+				margin-bottom: 180px;
+				#phrase {
+					color: hsl(0, 100%, 60%);
+            		text-shadow: 1px 0px 30px hsl(0, 100%, 60%);
+				}
+			}
+		}		
+	}
+	#row2 {
+		#box3 {
+			#wrap3 {
+            	height: 300px;
+            	margin-top: 50px;
+				margin-bottom: 50px; 
+            	position: relative;
+				#primesTable{
+					margin: 50px auto;
+					.number {
+						text-align: center;
+						padding: 3px;
+						font-family: 'Lato', sans-serif;
+						font-size: 150%;
+					}
+					.prime {
+						
+					}
+					.prime:hover {
+						color: #00ef25;
+                		text-shadow: 1px 0px 20px #00ef25;
+					}
+				}
+			}
+		}
+	}
+}
