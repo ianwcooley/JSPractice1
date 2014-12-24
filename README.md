@@ -1,3 +1,3 @@
 JSPractice1
 ===========
-View Here: http://htmlpreview.github.com/?https://github.com/ianwcooley/CSSPractice1/blob/master/JSWorld.html
+View Here: http://htmlpreview.github.com/?https://github.com/ianwcooley/JSPractice1/blob/master/JSWorld.html
